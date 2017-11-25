@@ -1,11 +1,24 @@
 {% extends "base.html" %}
 {% block head %}
 {{ super() }}
+  {% block seo %}
+    <meta name="author" content="{{ AUTHOR }}" />
+    <meta name="description" content="{{ SITEDESCRIPTION }}" /> 
+
+    <!-- Facebook OpenGraph -->
     <meta property="og:site_name" content="{{ SITENAME }}">
     <meta property="og:title" content="{{ SITETITLE }}" />
     <meta property="og:description" content="{{ SITEDESCRIPTION }}" />
-    <meta property="og:image" itemprop="image" content="  {%- for author, articles in authors|sort %}{% if author==AUTHOR %}{{ SITEURL }}/authors/{{ author.page_name[7:] }}.png{% endif %}{% endfor %}">
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ SITEURL }}" />
+    <meta property="og:image" itemprop="image" content="{{ SITEURL }}/images/{{ SITENAME }}.png">
+    <meta property="og:type" content="blog" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ SITETITLE }}">
+    <meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
+    <meta name="twitter:image" content="{{ SITEURL }}/images/{{ SITENAME }}.png">
+  {% endblock %}    
 {% endblock %}
 {% block content_title %}
 {% if articles_page.number == 1 %}

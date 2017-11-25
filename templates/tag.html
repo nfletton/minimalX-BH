@@ -1,4 +1,8 @@
 {% extends "index.html" %}
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex, follow" />
+{% endblock %}
 {% block content_title %}
 <div class="w3-row w3-light-grey w3-container w3-border-bottom">
 <br>
