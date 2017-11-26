@@ -39,15 +39,17 @@
   <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   <div class="post-info">
     <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
-      <span>Gepostet am <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time> in <i><a href="{{ SITEURL }}/{{ article.category.url }}" title="Alle Artikel der Kategorie {{ article.category }}">{{ article.category }}</a></i>
+      <span>{{ _('Posted on %(when)s in %(category)s',
+          when=article.locale_date,
+          category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
       </span>
     </div>
     {% if article.tags %}
     <div id="article-tags" class="w3-margin-right">
       {% for tag in article.tags %}
       <span class="w3-tag w3-light-grey w3-text-red w3-hover-red">
-        <a href="{{ SITEURL }}/{{ tag.url }}" title="Alle Posts zum Thema {{ tag.name.title() }}">#{{ tag }}</a>
-      </span>
+          <a href="{{ SITEURL }}/{{ tag.url }}" title="{{ _('All posts about %(tag)s', tag=tag.name.title()) }}">#{{ tag }}</a>
+        </span>
       {% endfor %}
     </div>
     {% endif %}
@@ -55,7 +57,7 @@
 </header>
   <div class="entry-content">{{article.summary}}</div>
   <footer>
-  <a class="w3-btn w3-red w3-right w3-margin" href="{{ SITEURL }}/{{ article.url }}">Weiterlesen &#10093;</a>
+  <a class="w3-btn w3-red w3-right w3-margin" href="{{ SITEURL }}/{{ article.url }}">{{ _('Continue reading') }} &#10093;</a>
   </footer>
 </article>
 <br>
