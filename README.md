@@ -13,11 +13,16 @@ minimalX. A beautiful and user-centered Pelican theme.
 
 ### Features
 - Fully responsive and mobile-first
+- Translation support
 - Real tagcloud
 - Comments via Disqus integration
 - Privacy-friendly social media buttons
 - W3.CSS CSS framework & HTML5 semantics
 
+### Supported Languages
+- English (default)
+- German
+- [Help to translate into your language](https://www.transifex.com/art1fa/minimalx/)
 
 ### Screenshot
 ![Screenshot of minimalX](minimalX.png)
