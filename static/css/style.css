@@ -62,10 +62,12 @@ nav {
   text-align: right;
 }
 
+nav ul li:hover {
+  font-weight: bold;
+}
 
 nav ul {
-  padding: 0;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0;
   line-height: 1.5;
   display: flex;
@@ -354,7 +356,7 @@ div#contact ul li {
 
   nav ul {
       flex-direction: row;
-      margin-top: 24px;
+      margin-top: 32px;
   }
 
   article {
