@@ -161,7 +161,7 @@ main p > img {
 main p.content-highlight {
   color: #f44336;
   font-size: 18pt;
-  text-align: right;
+  text-align: center;
   font-style: italic;
   width: 50%;
   float: right;
