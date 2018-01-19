@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
+{% block title %}<title>{{ SITENAME }}</title>{% endblock title %}
 {{ super() }}
   {% block seo %}
     <meta name="author" content="{{ AUTHOR }}" />

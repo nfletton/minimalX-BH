@@ -1,6 +1,6 @@
 {% extends "index.html" %}
 
-{% block title %}{{ _('%(sitename)s - Posts by %(author)s', sitename=SITENAME, author=author) }}{% endblock %}
+{% block title %}<title>{{ _('Posts by %(author)s - %(sitename)s', author=author, sitename=SITENAME) }}</title>{% endblock %}
 {% block content_title %}
 <br>
 <div class="w3-container col-main w3-center">

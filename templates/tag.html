@@ -1,5 +1,6 @@
 {% extends "index.html" %}
 {% block head %}
+{% block title %}<title>#{{ tag.name }} - {{SITENAME}}</title>{% endblock title %}
 {{ super() }}
 <meta name="robots" content="noindex, follow" />
 {% endblock %}
