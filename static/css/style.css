@@ -368,6 +368,8 @@ div#contact ul li {
 
   main p.content-highlight {
     font-size: 24pt;
+    width: 40%;
+    margin-right: -100px;
   }
 
   .adjust-width {
