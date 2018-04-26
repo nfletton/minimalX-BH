@@ -1,9 +1,26 @@
+.palette {
+  /* positionly pro https://creativemarket.com/blog/website-color-palettes */
+  color: #fff;
+  color: #101727;
+  color: #171f32;
+  color: #ff611d;
+  color: #cccfd3;
+  color: #2983d1;
+  color: #00b1b1;
+  color: #096db8;
+}
+
+.w3-blue {
+  color: #096db8;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   background-color: #fcfcfc;
   font-family: 'Open Sans', sans-serif;
   font-size: 12pt;
+  color: #373737;
 }
 
 a {
@@ -24,6 +41,7 @@ h1 {
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 23pt;
+  color: #4b4b4b;
 }
 
 h2 {
@@ -78,14 +96,18 @@ nav ul li {
 }
 
 nav ul li:hover {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.avatar-link {
+  margin: 0 50px;
 }
 
 img.avatar {
   width: 150px;
   max-width: 60%;
-  margin: 0 50px;
   vertical-align: middle;
+  border-radius: 75px;
 }
 
 ul.social {
@@ -113,12 +135,12 @@ ul.social li a:hover {
 }
 
 article {
-  font-size: 13.5pt;
+  /*font-size: 13.5pt;*/
   padding-top: 0!important;
 }
 
 main {
-  line-height: 1.7;
+  /*line-height: 1.7;*/
 }
 
 main > p:first-of-type::first-letter {
@@ -128,8 +150,16 @@ main > p:first-of-type::first-letter {
   line-height: 1;
 }
 
-main a {
-  color: #f44336;
+main a,
+main a:link,
+main a:active,
+main a:visited
+{
+  color: #00b1b1;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 main blockquote {
@@ -215,7 +245,7 @@ div#blogroll ul li {
 }
 
 #blogroll {
-    background-color: #272727;
+    background-color: #101727;
     color: white;
 }
 
@@ -237,7 +267,7 @@ div#contact ul li {
 }
 
 #copyright {
-  background-color: #0F0F0F;
+  background-color: #171f32;
 }
 
 .post-info {
@@ -276,7 +306,7 @@ div#contact ul li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #171f32;
   color: white;
   font-size: 20pt;
   font-weight: bold;
@@ -359,15 +389,15 @@ div#contact ul li {
   }
 
   article {
-    font-size: 15pt;
+    /*font-size: 15pt;*/
   }
 
   h1 {
-    font-size: 26pt;
+    /*font-size: 26pt;*/
   }
 
   main p.content-highlight {
-    font-size: 24pt;
+    /*font-size: 24pt;*/
     width: 40%;
     margin-right: -100px;
   }

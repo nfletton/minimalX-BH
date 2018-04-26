@@ -32,7 +32,7 @@
 <section id="content">
 <!-- Blog entries -->
 {% for article in articles_page.object_list %}
-<article class="w3-container w3-card-2 w3-white col-main">
+<article class="w3-container w3-card-2 col-main">
   <header>
   <div class="headerimage-card">
     <a href="{{ SITEURL }}/{{ article.url }}"><img src="{{ article.headerimage }}" style="width: 100%;"></img></a>
@@ -58,7 +58,7 @@
 </header>
   <div class="entry-content">{{article.summary}}</div>
   <footer>
-  <a class="w3-btn w3-red w3-right w3-margin" href="{{ SITEURL }}/{{ article.url }}">{{ _('Continue reading') }} &#10093;</a>
+  <a class="w3-btn w3-blue w3-right w3-margin" href="{{ SITEURL }}/{{ article.url }}">{{ _('Continue reading') }} &#10093;</a>
   </footer>
 </article>
 <br>
